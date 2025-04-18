@@ -1,0 +1,334 @@
+/* Navbar */
+.navbar {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+}
+
+.navbar-logo .logo {
+    height: 50px;
+}
+
+.navbar-links-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-links-scroll {
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    white-space: nowrap;
+    flex: 1;
+}
+
+.nav-links-scroll::-webkit-scrollbar {
+    display: none;
+    /* Chrome */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: 500;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.scroll-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    cursor: pointer;
+    color: #003366;
+}
+
+.scroll-button:hover {
+    color: #007bff;
+}
+
+.section {
+    scroll-margin-top: 80px; /* match your navbar height */
+  }  
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        font-size: 14px;
+        gap: 12px;
+    }
+
+    .scroll-button {
+        font-size: 18px;
+    }
+}
+
+/* Layout */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.homepage-container {
+    padding-top: 100px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    height: 50px;
+}
+
+/* Main content */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.left-content {
+    flex: 1;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.left-content h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.left-content p {
+    font-size: 17px;
+    margin-bottom: 25px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.primary-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+.right-content {
+    flex: 1;
+    text-align: center;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Questions */
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.questions p {
+    font-size: large;
+}
+
+.questions p b i {
+    color: rgb(94, 94, 94);
+}
+
+/* Table */
+#ranges {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 40px;
+    flex-wrap: wrap;
+}
+
+.table-container {
+    padding: 30px 40px;
+    overflow-x: auto;
+}
+
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+    border: 1px solid #ccc;
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.responsive-table th {
+    background-color: #f0f0f0;
+}
+
+.responsive-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.note {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Optional: scroll bar style */
+.table-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Factors container */
+#factors {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 40px;
+    flex-wrap: wrap;
+}
+
+.factors-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 40px;
+    flex-wrap: wrap;
+    font-size: large;
+}
+
+.factors-container p b i {
+    color: rgb(94, 94, 94);
+}
+
+/*Impact on loan eligibility*/
+.loan_eligibility{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 40px;
+    flex-wrap: wrap;
+}
+
+.loan_eligibility p, .loan_eligibility li{
+    font-size: large;
+}
+
+/*Improving credit score*/
+.improvement{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 40px;
+    flex-wrap: wrap;
+}
+
+.improvement li{
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-content,
+    .right-content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .left-content h1,
+    .left-content p {
+        text-align: center;
+    }
+
+    .button-group {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-group .primary-btn {
+        width: 80%;
+        max-width: 250px;
+    }
+}
