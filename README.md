@@ -27,8 +27,12 @@ A full-stack web app that predicts your CIBIL score based on financial inputs an
 cd backend
 npm install
 node server.js
+```
 
 ### Frontend (React)
+```bash
 cd frontend
 npm install
 npm start
+```
+![alt text](image.png)
