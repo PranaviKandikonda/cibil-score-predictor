@@ -19,5 +19,16 @@ A full-stack web app that predicts your CIBIL score based on financial inputs an
 | Machine Learning | Python, scikit-learn |
 | Data        | CSV files (CIBIL & Loans) |
 
-##  Project Structure
 
+##  How to Run
+
+### Backend (Node + Python)
+```bash
+cd backend
+npm install
+node server.js
+
+### Frontend (React)
+cd frontend
+npm install
+npm start
